@@ -10,7 +10,33 @@ const adSites = [
 	"*://*.scorecardresearch.com/*",
 	"*://*.zedo.com/*",
 	"*://*.zetaglobal.com/*"
-	// "https://adaway.org/hosts.txt",
+]
+
+chrome.webRequest.onBeforeRequest.addListener(
+	(details)=>{{cancel: true}},
+	{urls: adSites},
+	["blocking"]
+)
+
+function isOn(){
+	console.log("lol");
+}
+
+// function isOn(){
+// 	var checkBox = document.getElementById("switch");
+// 	console.log("yes");
+
+// 	if(checkBox.checked){
+		
+// 	} else {
+// 		console.log("no");
+// 		chrome.storage.local.set({variable: variableInformation});
+// 	}
+// }
+
+// Adblocker Lists
+
+// "https://adaway.org/hosts.txt",
 	// "https://adblock-thai.github.io/thai-ads-filter/subscription.txt",
 	// "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
 	// "https://assets.windscribe.com/custom_blocklists/clickbait.txt",
@@ -42,26 +68,3 @@ const adSites = [
 	// "https://phishing.army/download/phishing_army_blocklist.txt",
 	// "https://raw.githubusercontent.com/ADsecu/black-domains/master/domain_hosts.txt",
 	// "https://raw.githubusercontent.com/AlexRabbit/ADios/master/hosts"
-]
-
-chrome.webRequest.onBeforeRequest.addListener(
-	(details)=>{{cancel: true}},
-	{urls: adSites},
-	["blocking"]
-)
-
-function isOn(){
-	console.log("lol");
-}
-
-// function isOn(){
-// 	var checkBox = document.getElementById("switch");
-// 	console.log("yes");
-
-// 	if(checkBox.checked){
-		
-// 	} else {
-// 		console.log("no");
-// 		chrome.storage.local.set({variable: variableInformation});
-// 	}
-// }
