@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+body, html{
+    border-radius: 7px;
+}
+
+.container {
+    border: 2px rgba(0, 0, 0, 0.023) solid ;
+    text-align: center;
+    width: 384px !important;
+    min-height: 150px !important;
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+    border-radius: 7px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+p {
+    font-family: 'Yomogi', cursive;
+    font-weight: 600;
+    columns: orange !important;
+}
+
+h1 {
+    font-family: 'Tourney', cursive;
+    display: inline-block;
+    color: #DC281E;
+    font-size: 1.5rem !important;
+
+}
+
+input[type='checkbox'] {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -webkit-appearance:none;
+    width:75px;
+    height:75px;
+    background: #FAAD80;
+    background: -webkit-linear-gradient(to right, #DC281E, #FAAD80);
+    background: linear-gradient(to right, #DC281E, #FAAD80);
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+input[type='checkbox']:checked {
+    background: #C9FFBF; 
+    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF); 
+    background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+    
+}
