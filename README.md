@@ -8,10 +8,10 @@
 ![adblocker ](images/adblocker-1.png)
 ![adblocker ](images/adblocker-2.png)
 
-### when not using
+### when disabled
 
 ![adblocker ](images/before.png)
 
-### when using
+### when enabled
 
 ![adblocker ](images/after.png)
