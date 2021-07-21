@@ -3,6 +3,7 @@
     "version": "1.0",
     "description": "This is an Ad Blocker to avoid Ads on Chrome Browser",
     "permissions": ["activeTab","webRequest","webRequestBlocking","<all_urls>"],
+
     "background": {
         "scripts": ["background.js"]
     },

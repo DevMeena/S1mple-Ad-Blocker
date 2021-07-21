@@ -1,9 +1,12 @@
-// var isExtensionOn = false;
-
-// chrome.extension.sendMessage({ cmd: "setOnOffState", data: { value: isExtensionOn } });
-
-// chrome.extension.sendMessage({ cmd: "isAutoFeedMode" }, function (response) {
-//     if (response == true) {
-//      //Run the rest of your content-script in here..
-//     }
-// });
+window.onload = function () {
+    function updateLabel() {
+        var enabled = chrome.extension.getBackgroundPage().enabled;
+        document.getElementById('toggle_button').value = enabled ? "Enable" : "Disable";
+    }
+    document.getElementById('toggle_button').onclick = function () {
+        var background = chrome.extension.getBackgroundPage();
+        background.enabled = !background.enabled;
+        updateLabel();
+    };
+    updateLabel();
+}
